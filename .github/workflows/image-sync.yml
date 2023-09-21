@@ -6,10 +6,6 @@ on:
   
 env:
   IMAGE_SYNCER_VERSION: v1.5.2
-  DOCKER_NAMESPACE: $GITHUB_REPOSITORY_OWNER
-  DOCKER_REGISTRY: "docker.io"
-  USERNAME: ${{ secrets.DOCKER_USERNAME }}
-  PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
 
 jobs:
   image-sync:
@@ -18,7 +14,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
+      - name: show config
+        run: |
+          cat ./auth.json
+          echo "==========="
+          cat ./images.json
       - name: install image-sync tool
         run: |
           wget https://github.com/AliyunContainerService/image-syncer/releases/download/${IMAGE_SYNCER_VERSION}/image-syncer-${IMAGE_SYNCER_VERSION}-linux-amd64.tar.gz
