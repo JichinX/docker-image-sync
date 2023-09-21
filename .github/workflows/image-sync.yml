@@ -19,6 +19,11 @@ jobs:
           cat ./auth.json
           echo "==========="
           cat ./images.json
+      - name: test docker
+        run: |
+          docker info
+          echo"=========="
+          docker pull developerxu/python_test:v1.0
       - name: install image-sync tool
         run: |
           wget https://github.com/AliyunContainerService/image-syncer/releases/download/${IMAGE_SYNCER_VERSION}/image-syncer-${IMAGE_SYNCER_VERSION}-linux-amd64.tar.gz
