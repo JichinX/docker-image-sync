@@ -4,7 +4,7 @@ on:
     branches: [main]
   
 env:
-  IMAGE_SYNCER_VERSION: v1.3.1
+  IMAGE_SYNCER_VERSION: v1.5.2
   DOCKER_NAMESPACE: $GITHUB_REPOSITORY_OWNER
   DOCKER_REGISTRY: "docker.io"
   USERNAME: ${{ secrets.DOCKER_USERNAME }}
