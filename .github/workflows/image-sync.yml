@@ -24,8 +24,5 @@ jobs:
           wget https://github.com/AliyunContainerService/image-syncer/releases/download/${IMAGE_SYNCER_VERSION}/image-syncer-${IMAGE_SYNCER_VERSION}-linux-amd64.tar.gz
           tar -zxf image-syncer-${IMAGE_SYNCER_VERSION}-linux-amd64.tar.gz
 
-      - name: add sercret to file
-        run: envsubst < auth.json > auth.bak.json
-
       - name: sync images
-        run: ./image-syncer --auth=./auth.bak.json --images=./images.json --retries=3
+        run: ./image-syncer --auth=./auth.json --images=./images.json --retries=3
