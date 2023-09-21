@@ -28,4 +28,4 @@ jobs:
         run: envsubst < auth.json > auth.bak.json
 
       - name: sync images
-        run: ./image-syncer --proc=10 --auth=./auth.bak.json --images=./images.json --namespace=${DOCKER_NAMESPACE} --registry=${DOCKER_REGISTRY} --retries=3
+        run: ./image-syncer --auth=./auth.bak.json --images=./images.json --retries=3
