@@ -20,7 +20,7 @@ jobs:
       - name: test docker push
         run: |
           docker pull registry.k8s.io/metrics-server/metrics-server:v0.6.4
-          docker tag registry.k8s.io/metrics-server/metrics-server:v0.6.4 developerxu/metrics-server/metrics-server:v0.6.4
+          docker tag registry.k8s.io/metrics-server/metrics-server:v0.6.4 developerxu/metrics-server:v0.6.4
           docker push developerxu/metrics-server/metrics-server:v0.6.4
       - name: install image-sync tool
         run: |
