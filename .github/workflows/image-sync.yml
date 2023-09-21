@@ -22,7 +22,7 @@ jobs:
       - name: test docker
         run: |
           docker info
-          echo"=========="
+          echo "=========="
           docker pull developerxu/python_test:v1.0
       - name: install image-sync tool
         run: |
