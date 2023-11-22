@@ -1,11 +1,4 @@
 {
-    "registry.k8s.io/kube-apiserver": "developerxu/kube-apiserver",
-    "registry.k8s.io/kube-controller-manager": "developerxu/kube-controller-manager",
-    "registry.k8s.io/kube-scheduler": "developerxu/kube-scheduler",
-    "registry.k8s.io/kube-proxy": "developerxu/kube-proxy",
-    "registry.k8s.io/pause": "developerxu/pause",
-    "registry.k8s.io/etcd": "developerxu/etcd",
-    "registry.k8s.io/coredns/coredns": "developerxu/coredns",
     "registry.k8s.io/metrics-server/metrics-server": "developerxu/metrics-server",
     "registry.k8s.io/prometheus-adapter/prometheus-adapter": "developerxu/prometheus-adapter"
 }
