@@ -1,4 +1,0 @@
-{
-    "registry.k8s.io/metrics-server/metrics-server": "developerxu/metrics-server",
-    "registry.k8s.io/prometheus-adapter/prometheus-adapter": "developerxu/prometheus-adapter"
-}
