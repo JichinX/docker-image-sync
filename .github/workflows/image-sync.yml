@@ -2,7 +2,7 @@ name: image-sync
 run-name: syncing docker images
 on:
   push:
-    branches: [main]
+    branches: [kubernetes]
 
 env:
   IMAGE_SYNCER_VERSION: v1.5.2
