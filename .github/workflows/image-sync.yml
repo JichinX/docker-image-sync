@@ -28,4 +28,4 @@ jobs:
           tar -zxf image-syncer-${IMAGE_SYNCER_VERSION}-linux-amd64.tar.gz
 
       - name: sync images
-        run: ./image-syncer --auth=./auth.json --images=./images.json --retries=3
+        run: ./image-syncer --auth=./auth.json --images=./kubernetes.json --retries=3
